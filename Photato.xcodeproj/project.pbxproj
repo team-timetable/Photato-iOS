@@ -25,6 +25,10 @@
 		17A439B62C9EE61900B071CA /* Pretendard-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A439AD2C9EE61900B071CA /* Pretendard-Regular.ttf */; };
 		17A439B72C9EE61900B071CA /* Pretendard-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17A439AE2C9EE61900B071CA /* Pretendard-Thin.ttf */; };
 		17A439B92C9EE8F300B071CA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A439B82C9EE8F300B071CA /* CustomTextField.swift */; };
+		17A439BC2C9EF9BC00B071CA /* SignupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A439BB2C9EF9BC00B071CA /* SignupModel.swift */; };
+		17A439BE2C9EF9D100B071CA /* SignupModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A439BD2C9EF9D100B071CA /* SignupModelView.swift */; };
+		17A439C02C9EF9E500B071CA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A439BF2C9EF9E500B071CA /* SignupView.swift */; };
+		17BCDC082CA1B35400B761A9 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BCDC072CA1B35400B761A9 /* BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +51,11 @@
 		17A439AD2C9EE61900B071CA /* Pretendard-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.ttf"; sourceTree = "<group>"; };
 		17A439AE2C9EE61900B071CA /* Pretendard-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Thin.ttf"; sourceTree = "<group>"; };
 		17A439B82C9EE8F300B071CA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		17A77F2F2C9D49CE001E6DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		17A439BB2C9EF9BC00B071CA /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
+		17A439BD2C9EF9D100B071CA /* SignupModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModelView.swift; sourceTree = "<group>"; };
+		17A439BF2C9EF9E500B071CA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		17A77F2F2C9D49CE001E6DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17BCDC072CA1B35400B761A9 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,15 +88,12 @@
 		176BF0DB2C9CFBC200DE2EDB /* Photato */ = {
 			isa = PBXGroup;
 			children = (
-				17A439882C9EB93400B071CA /* Components */,
-				17A77F2F2C9D49CE001E6DCC /* Info.plist */,
-				17A77F1C2C9D4880001E6DCC /* Font */,
 				176BF0DC2C9CFBC200DE2EDB /* PhotatoApp.swift */,
 				176BF0DE2C9CFBC200DE2EDB /* FirstView.swift */,
-				17A439BA2C9EF2A800B071CA /* Signup */,
-				17A4398B2C9EC06800B071CA /* Login */,
-				176BF0E02C9CFBC300DE2EDB /* Assets.xcassets */,
-				176BF0E22C9CFBC300DE2EDB /* Preview Content */,
+				17A77F2F2C9D49CE001E6DCC /* Info.plist */,
+				17BCDC062CA1B1DB00B761A9 /* Resources */,
+				17A439882C9EB93400B071CA /* Components */,
+				17BCDC042CA1B1A900B761A9 /* Feature */,
 			);
 			path = Photato;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 			children = (
 				17A439892C9EB9AF00B071CA /* MainButton.swift */,
 				17A439B82C9EE8F300B071CA /* CustomTextField.swift */,
+				17BCDC072CA1B35400B761A9 /* BackButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -123,6 +129,9 @@
 		17A439BA2C9EF2A800B071CA /* Signup */ = {
 			isa = PBXGroup;
 			children = (
+				17A439BB2C9EF9BC00B071CA /* SignupModel.swift */,
+				17A439BD2C9EF9D100B071CA /* SignupModelView.swift */,
+				17A439BF2C9EF9E500B071CA /* SignupView.swift */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -141,6 +150,33 @@
 				17A439AE2C9EE61900B071CA /* Pretendard-Thin.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		17BCDC042CA1B1A900B761A9 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				17BCDC052CA1B1BC00B761A9 /* Auth */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		17BCDC052CA1B1BC00B761A9 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17A4398B2C9EC06800B071CA /* Login */,
+				17A439BA2C9EF2A800B071CA /* Signup */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		17BCDC062CA1B1DB00B761A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				176BF0E02C9CFBC300DE2EDB /* Assets.xcassets */,
+				17A77F1C2C9D4880001E6DCC /* Font */,
+				176BF0E22C9CFBC300DE2EDB /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A439B92C9EE8F300B071CA /* CustomTextField.swift in Sources */,
+				17A439BE2C9EF9D100B071CA /* SignupModelView.swift in Sources */,
+				17BCDC082CA1B35400B761A9 /* BackButton.swift in Sources */,
 				17A439932C9EC0CD00B071CA /* LoginView.swift in Sources */,
 				176BF0DF2C9CFBC200DE2EDB /* FirstView.swift in Sources */,
+				17A439C02C9EF9E500B071CA /* SignupView.swift in Sources */,
+				17A439BC2C9EF9BC00B071CA /* SignupModel.swift in Sources */,
 				17A4398F2C9EC0A400B071CA /* LoginModel.swift in Sources */,
 				17A4398A2C9EB9AF00B071CA /* MainButton.swift in Sources */,
 				176BF0DD2C9CFBC200DE2EDB /* PhotatoApp.swift in Sources */,
@@ -361,7 +401,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Photato/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Photato/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = C4S7HKU287;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -391,7 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Photato/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Photato/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = C4S7HKU287;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

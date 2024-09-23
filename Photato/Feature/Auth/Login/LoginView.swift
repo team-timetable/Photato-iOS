@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject var LoginMV: LoginModelView = .init()
+    
     var body: some View {
         VStack {
             Spacer()
@@ -32,6 +33,7 @@ struct LoginView: View {
             }
                 .padding(.top, UIScreen.main.bounds.height * 0.72)
         )
+        BackButton()
     }
 }
 
